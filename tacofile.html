@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TacoFile</title>
+  <meta name="description" content="TacoFile — move your Piascore and Goodnotes scores, with their markings, into TacoScore.">
+  <style>
+    :root { --bg: #ffffff; --text: #1d1d1f; --muted: #6e6e73; --accent: #1f6f6b; --line: #e5e5ea; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #111113; --text: #f2f2f7; --muted: #a1a1a6; --accent: #5fbfb8; --line: #2c2c2e; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 64px 20px; }
+    h1 { font-size: 40px; margin: 0 0 4px; }
+    h2 { font-size: 20px; margin: 32px 0 8px; }
+    .tagline { color: var(--accent); font-size: 18px; margin: 0 0 32px; }
+    p { margin: 0 0 12px; }
+    .ko { color: var(--muted); }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+    a { color: var(--accent); }
+    ol, ul { padding-left: 20px; margin: 0 0 12px; }
+    .download {
+      display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+      font-weight: 600; padding: 12px 22px; border-radius: 10px; margin: 8px 0 4px;
+    }
+    .req { color: var(--muted); font-size: 14px; margin: 0 0 4px; }
+    footer { color: var(--muted); font-size: 14px; margin-top: 48px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>TacoFile</h1>
+    <p class="tagline">Move your Piascore and Goodnotes scores into TacoScore.</p>
+
+    <p>TacoFile runs on your computer. It copies your scores from the iPad over a USB
+       cable, keeps your markings, and sends them to TacoScore — all of them at once.</p>
+    <p class="ko">TacoFile은 컴퓨터에서 실행됩니다. USB 케이블로 iPad의 악보를 가져와
+       필기를 그대로 살린 채 TacoScore로 한꺼번에 보냅니다.</p>
+
+    <a class="download" href="tacofile-0.3.zip">Download for Mac · 0.3</a>
+    <p class="req">Mac with Apple silicon (M1 or later), macOS 13 or newer · Windows: coming soon</p>
+    <p class="req">Apple silicon(M1 이상) Mac, macOS 13 이상 · Windows: 준비 중</p>
+
+    <h2>How to use · 사용 방법</h2>
+    <ol>
+      <li>Open the downloaded file, move <b>TacoFile</b> to Applications and open it.</li>
+      <li>Connect the iPad with a USB cable and click <b>Get Scores from iPad</b>.
+          Keep the iPad unlocked until it's done.</li>
+      <li>Open TacoScore on the iPad, then click <b>Send to iPad</b> in TacoFile.</li>
+    </ol>
+    <ol class="ko">
+      <li>내려받은 파일을 열고 <b>TacoFile</b>을 응용 프로그램 폴더로 옮긴 뒤 실행하세요.</li>
+      <li>USB 케이블로 iPad를 연결하고 <b>iPad에서 악보 가져오기</b>를 누르세요.
+          끝날 때까지 iPad 잠금을 풀어 두세요.</li>
+      <li>iPad에서 TacoScore를 연 다음 TacoFile에서 <b>iPad로 보내기</b>를 누르세요.</li>
+    </ol>
+
+    <h2>Your data · 개인정보</h2>
+    <p>Everything happens on your computer and iPad. TacoFile makes a temporary backup of
+       the iPad, keeps only the Piascore and Goodnotes files, and deletes the rest.
+       Nothing is sent to us.</p>
+    <p class="ko">모든 작업은 컴퓨터와 iPad 안에서만 이루어집니다. TacoFile은 iPad를 임시로
+       백업해 Piascore와 Goodnotes 파일만 남기고 나머지는 지웁니다. 어떤 정보도 저희에게
+       전송되지 않습니다.</p>
+
+    <hr>
+
+    <ul>
+      <li><a href="./">TacoScore</a></li>
+      <li><a href="privacy_policy.txt">Privacy Policy</a></li>
+    </ul>
+
+    <footer>Piascore and Goodnotes are trademarks of their owners. TacoScore is not
+      affiliated with them.<br>© TacoScore</footer>
+  </main>
+</body>
+</html>
